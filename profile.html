@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pet Profile</title>
+
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+</head>
+
+<body>
+<h1>Pet Profile</h1>
+  <div class="container">
+      <form  id="petProfileForm">
+      <div class="group-form">
+        <label for="">Pet Name</label>
+        <input class="form-control" type="text" name="name" placeholder="name" id="name">
+      </div>
+      <div class="group-form">
+        <label for="">Age</label>
+        <input class="form-control" type="text" name="age" placeholder="age" id="age">
+      </div>
+      <label>Sexual Orientation</label>
+      <div class="radio">
+        <label><input type="radio" name="orientation" value="straight" id="orientation">Straight</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="orientation" value="homosexual" id="orientation">Homosexual</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="orientation" value="anything" id="orientation">Anything Goes</label>
+      </div>
+      <label>Gender </label>
+      <div class="radio">
+        <label><input type="radio" name="gender" value="male" id="gender">Male</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="gender" value="female" id="gender">Female</label>
+      </div>
+      <div class="group-form">
+        <label for="">Location</label>
+        <input class="form-control" type="text" name="location" placeholder="123 street name, zip code" id="location">
+      </div>
+      <div class="group-form">
+        <label for="">Species</label>
+        <input class="form-control" type="text" name="breed" placeholder="Dog" id="species">
+      </div>
+      <div class="group-form">
+        <label for="">Breed</label>
+        <input class="form-control" type="text" name="name" placeholder="Border Collie" id="breed">
+      </div>
+      <div class="group-form">
+        <label for="">Profile Pic</label>
+        <input class="form-control" type="url" name="image" placeholder="pic url" id="profilePic">
+      </div>
+      <div class="group-form">
+        <label for="">Owner's Name</label>
+        <input class="form-control" type="url" name="image" placeholder="Owner's Name" id="ownerName">
+      </div>
+      <div class="group-form">
+        <button class="btn btn-default" type="submit" id="submitButton">Submit</button>
+      </form>
+  </div>
+
+  <script data-main="javascripts/promises" src="lib/bower_components/requirejs/require.js"></script>
+
+</body>
+</html>
