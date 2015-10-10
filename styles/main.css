@@ -1,8 +1,16 @@
 body {
-  background-color: pink; }
+  background-color: white; }
 
 h1 {
   text-align: center;
   color: purple; }
+
+  .jumbotron {
+    background: #000 url("https://thepossiblecanine.files.wordpress.com/2014/02/dogcat.jpg") center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+  }
 
 /*# sourceMappingURL=main.css.map */
