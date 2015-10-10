@@ -12,13 +12,11 @@ requirejs.config({
 });
 
 requirejs(
-  ["jquery", "hbs", "bootstrap", "get-books"], 
-  function($, Handlebars, bootstrap, books) {
+  ["jquery", "hbs", "bootstrap","button"],
+  function($, Handlebars, bootstrap, button) {
 
-    books.load(function(bookArray) {
-      require(['hbs!../templates/books'], function(bookTpl) {
-        $("#bookList").html(bookTpl({ books:bookArray }));
-      });
+    // button.load(function() {
+      // require(['hbs!../templates/books'], function(bookTpl) {
+      //   $("#bookList").html(bookTpl({ books:bookArray }));
+      // });
     });
-  }
-);
