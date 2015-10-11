@@ -5,37 +5,59 @@
 
   <meta charset="utf-8">
   <title>Login Screen</title>
-
   <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
 </head>
 
 <body>
-<form id = "loginPage" action="#" method="POST">
-      <fieldset>
+  <form id = "loginPage" action="#" method="POST">
+    <fieldset>
       <label for="email">Email</label>
       <input type="text" name= "email" id = "email" placeholder="johndoe@css.com"/>
+
+      <br><br>
 
       <label for="password">Password</label>
       <input type="password" name= "password" id = "password">
 
+      <br><br>
+
       <button type="login" id ="loginButton">Login Now</button>
 
-      </fieldset>
-    </form>
+      <br><br>
+
+    </fieldset>
+  </form>
 
   <div id="bookList">
 
   <script data-main="javascripts/promises" src="lib/bower_components/requirejs/require.js"></script>
 
+  <form id="register">
+
+    <label for="firstName">First Name: </label>
+    <input name="firstName" id="firstName">
+
+    <br><br>
+
+    <label for="lastName">Last Name: </label>
+    <input name="lastName" id="lastName">
+
+    <br><br>
+
+    <label for="email">Email: </label>
+    <input name="email" id="email">
+
+    <br><br>
+
+    <label for="passwd">Password: </label>
+    <input name="passwd" id="passwd">
+
+    <br><br>
+
+  </form>
+  <!-- // <script data-main="javascripts/promises" src="lib/bower_components/requirejs/require.js"></script> -->
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-

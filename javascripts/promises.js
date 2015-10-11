@@ -12,8 +12,8 @@ requirejs.config({
 });
 
 requirejs(
-  ["jquery", "hbs", "bootstrap", "get-books", "profile", "button"],
-  function($, Handlebars, bootstrap, books, profile, button) {
+  ["jquery", "hbs", "bootstrap", "get-books", "profile", "button", "register"],
+  function($, Handlebars, bootstrap, books, profile, button, register) {
 
     // button.load(function() {
       // require(['hbs!../templates/books'], function(bookTpl) {
