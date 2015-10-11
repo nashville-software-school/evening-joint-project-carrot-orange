@@ -12,13 +12,16 @@ requirejs.config({
 });
 
 requirejs(
-  ["jquery", "hbs", "bootstrap", "get-books"], 
-  function($, Handlebars, bootstrap, books) {
+  ["jquery", "hbs", "bootstrap", "get-books", "register"],
+  function($, Handlebars, bootstrap, books, register) {
 
-    books.load(function(bookArray) {
-      require(['hbs!../templates/books'], function(bookTpl) {
-        $("#bookList").html(bookTpl({ books:bookArray }));
-      });
-    });
+
+
+
+    // books.load(function(bookArray) {
+    //   require(['hbs!../templates/books'], function(bookTpl) {
+    //     $("#bookList").html(bookTpl({ books:bookArray }));
+    //   });
+    // });
   }
 );
