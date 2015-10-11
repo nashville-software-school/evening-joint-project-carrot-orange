@@ -1,4 +1,14 @@
+<h3>Let's get you pet a date!</h3>
 {{#each books}}
-  <h3>{{ title }}</h3>
-  <section>{{ type }}</section>
+<div class="row shortProfile" style="color:{{secondaryColor}};background:{{primaryColor}};">
+	<img class='col-sm-4' src="{{photoUrl}}" alt="profile picture">
+	<div class='col-sm-8'>
+		<h3>{{publisher}}</h3><h5>Location: {{location}}</h5>
+		<p>About: {{blurb}}</p>
+		<p>Interests: {{interests}}</p>
+		<p>Looking for: {{preferences}}</p>
+		<p>Industry: {{industry}}</p>
+	</div>
+
+</div>
 {{/each}}
