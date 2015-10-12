@@ -25,13 +25,13 @@ define(["jquery"], function($) {
               "userID" : authData.uid
             };
 
+          var form = firebaseRef.push();
+          form.set(petForm, function(error, data) {
+          console.log(error);
+          console.log(data);
+          });
 
-
-         var form = firebaseRef.push();
-         form.set(petForm, function(error, data) {
-            console.log(error);
-            console.log(data);
-         });
+          window.location.href="search.html";
          // console.log(form);
 
     });
