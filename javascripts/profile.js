@@ -21,10 +21,11 @@ define(["jquery"], function($) {
               "profilePic": $("#profilePic").val(),
               "ownerName" : $("#ownerName").val(),
               "orientation" : $("#orientation").val(),
-              "gender" : $("#gender").val()
+              "gender" : $("#gender").val(),
+              "userID" : authData.uid
             };
 
-                           // "userID" : authData.uid
+
 
          var form = firebaseRef.push();
          form.set(petForm, function(error, data) {
