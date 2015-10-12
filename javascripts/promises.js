@@ -22,7 +22,7 @@ requirejs(
         console.log("inside templates")
         console.log(bookTpl);
         console.log(bookArray);
-        $("#bookList").html(bookTpl({ bookArray } , { data:bookArray }));
+        $("#bookList").html(bookTpl({ books:bookArray }));
       });
     });
   }
