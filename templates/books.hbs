@@ -1,4 +1,26 @@
 {{#each books}}
-  <h3>{{ title }}</h3>
-  <section>{{ type }}</section>
+<div class="row">
+	<div class="shortProfile col-md-6 col-md-offset-3">
+		<div class="panel panel-default">
+			<div class="panel-heading"><h1>{{name}}</h1></div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-md-6">
+						<img class=' img-responsive' src="{{profilePic}}" alt="profile picture">
+					</div>
+					<div class="col-md-6">
+						<h3>How old is the pet: {{age}}</h3>
+						<h3>Pets breed: {{breed}}</h3>
+						<h3>Gender: {{gender}}</h3>
+						<h3>Pet lives at: {{location}}</h3>
+						<h3>Sexual Prefrence: {{orientation}}</h3>
+						<h3>Pet's Owner: {{ownerName}}</h3>
+						<h3>Species: {{species}}
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
 {{/each}}

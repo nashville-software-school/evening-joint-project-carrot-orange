@@ -3,12 +3,14 @@ define(function(require) {
 
   return {
     load: function(fn) {
-      // This XHR does belong here
-      $.ajax("https://nss-book-store.firebaseio.com/books.json").done(function(books) {
-        fn(books);
 
-      });
+       $.ajax("https://petdatingsite.firebaseio.com/profiles.json").done(function(profiles) {
+       	console.log(profiles);
+       	console.log(fn);
+         fn(profiles);
 
-    }
-  };
+       });
+
+     }
+   };
 });
