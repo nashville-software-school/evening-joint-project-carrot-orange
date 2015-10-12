@@ -1,8 +1,7 @@
-body {
-  background-color: pink; }
-
-h1 {
-  text-align: center;
-  color: purple; }
-
+.jumbotron {
+	background-image: url("/images/jumbotron.jpg");
+}
+.jumbotron h1 {
+	vertical-align: bottom;
+}
 /*# sourceMappingURL=main.css.map */

@@ -11,15 +11,9 @@ requirejs.config({
     }
 });
 
-requirejs(["jquery", "hbs", "bootstrap", "get-books","button", "register"],
-    function($, Handlebars, bootstrap, books, button, register) {
-        
-        books.load(function(bookArray) {
-            require(['hbs!../templates/books'], function(bookTpl) {
-                $("#bookList").html(bookTpl({
-                    books: bookArray
-                }));
-            });
-        });
-    }
-);
+
+requirejs(
+  ["jquery", "hbs", "bootstrap", "get-books", "profile", "button", "register"],
+  function($, Handlebars, bootstrap, books, profile, button, register) {
+
+    });

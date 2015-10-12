@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pet Profile</title>
+    <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1>Pet Profile</h1>
+                <form id="petProfileForm">
+                    <div class="form-group">
+                        <label for="">Pet Name</label>
+                        <input class="form-control" type="text" name="name" placeholder="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Age</label>
+                        <input class="form-control" type="text" name="age" placeholder="age" id="age">
+                    </div>
+                    <label>Sexual Orientation</label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="orientation" value="straight" id="orientation">Straight</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="orientation" value="homosexual" id="orientation">Homosexual</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="orientation" value="anything" id="orientation">Anything Goes</label>
+                    </div>
+                    <label>Gender </label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" value="male" id="gender">Male</label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" value="female" id="gender">Female</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Location</label>
+                        <input class="form-control" type="text" name="location" placeholder="123 street name, zip code" id="location">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Species</label>
+                        <input class="form-control" type="text" name="breed" placeholder="Dog" id="species">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Breed</label>
+                        <input class="form-control" type="text" name="name" placeholder="Border Collie" id="breed">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Profile Pic</label>
+                        <input class="form-control" type="url" name="image" placeholder="pic url" id="profilePic">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Owner's Name</label>
+                        <input class="form-control" type="url" name="image" placeholder="Owner's Name" id="ownerName">
+                    </div>
+                    <button class="btn btn-default" type="submit" id="submitButton">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <script data-main="javascripts/promises" src="lib/bower_components/requirejs/require.js"></script>
+</body>
+
+</html>

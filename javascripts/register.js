@@ -1,4 +1,5 @@
 define(["jquery"], function($) {
+
 	var registerRef = new Firebase("https://petdatingsite.firebaseio.com/");
 	
 	$('#registerButton').click(function(e) {
@@ -14,9 +15,12 @@ define(["jquery"], function($) {
 	    	if (error) {
 	    		console.log(error);
 	    	}
-	    	console.log(userData);
+	    	var authdata = registerRef.GetAuth();
+	    	if (authdata) {
+	    		window.location = "/profile.html"
+	    	}
+	    	
 	    });
 	});
 	
 });
-
