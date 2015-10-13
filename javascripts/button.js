@@ -10,6 +10,7 @@ define(["jquery"], function($) {
 
         loginRef.authWithPassword(loginForm, function(error, authData) {
             if (error) {
+                console.log(error);
             } else {
                 window.location = "/profile.html"
             }

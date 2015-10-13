@@ -15,11 +15,7 @@ define(["jquery"], function($) {
 	    	if (error) {
 	    		console.log(error);
 	    	}
-	    	var authdata = registerRef.GetAuth();
-	    	if (authdata) {
-	    		window.location = "/profile.html"
-	    	}
-	    	
+	    		window.location = "/"
 	    });
 	});
 	
