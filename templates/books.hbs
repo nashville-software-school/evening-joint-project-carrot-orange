@@ -1,8 +1,12 @@
-<h3>Let's get you pet a date!</h3>
+<h1>Let's get your pet a date!</h1>
 {{#each books}}
 <div class="row shortProfile" style="color:{{secondaryColor}};background:{{primaryColor}};">
-	<img class='col-sm-4 img-responsive' src="{{profilePic}}" alt="profile picture">
-	<div class='col-sm-8 pull-right'>
+	<div class="row">
+	   <div class="col-md-3">
+	   <img class='col-sm-4 img-responsive' src="{{profilePic}}" alt="profile picture">
+	   </div>
+	<div class="col-md-9">
+	    
 	
 		<h3>How old is the pet: {{age}}</h3>
 		<h3>Pets breed: {{breed}}</h3>
@@ -12,7 +16,8 @@
 		<h3>Sexual Prefrence: {{orientation}}</h3>
 		<h3>Pet's Owner: {{ownerName}}</h3>
 		<h3>Species: {{species}}
+	   </div>
 	</div>
 
-</div>
+
 {{/each}}
