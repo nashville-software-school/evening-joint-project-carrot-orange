@@ -13,20 +13,15 @@ requirejs.config({
 
 
 requirejs(
-    ["jquery", "hbs", "bootstrap", "get-books", "profile", "button", "register"],
-    function($, Handlebars, bootstrap, books, profile, button, register) {
-
-        console.log("in promise");
+    ["jquery", "hbs", "bootstrap", "get-books", "profile", "button", "register", "search"],
+    function($, Handlebars, bootstrap, books, profile, button, register, search) {
         books.load(function(bookArray) {
-            console.log("in load");
             require(['hbs!../templates/books'], function(bookTpl) {
-                console.log("inside templates")
-                console.log(bookTpl);
-                console.log(bookArray);
                 $("#bookList").html(bookTpl({
                     books: bookArray
                 }));
             });
         });
+
 
     });
