@@ -6,7 +6,7 @@ define(["jquery"], function($) {
     }
     $(document).on('click', '.like', function(e) {
         var petUserId = this.id;
-        var updateURL = new Firebase("https://petdatingsite.firebaseio.com/profile/" + petUserId);
-    		console.log(updateURL.ref());
+        var updateURL = new Firebase("https://petdatingsite.firebaseio.com/profiles/" + petUserId + '/likes');
+        updateURL.push({userId: userAuth.uid});
     });
 });
